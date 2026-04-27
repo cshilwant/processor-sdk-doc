@@ -10,6 +10,14 @@ of the Processor SDK Linux AM62A.
 Processor SDK Linux AM62A 11.xx Releases
 ========================================
 
+Processor SDK 11.02.11.03
+=========================
+- This is the second reference release on the 2025 LTS stream with 6.12 Kernel, 2025.01 U-Boot and Yocto Scarthgap/5.0
+- ATF 2.13+
+- OPTEE 4.7.0
+- Yocto Scarthgap/5.0
+- Platforms Supported : AM62A (HS-FS, HS-SE) : `SK-AM62A-LP <https://www.ti.com/tool/SK-AM62A-LP>`__
+
 Processor SDK 11.01.07.05
 =========================
 - This is the first reference release on the 2025 LTS stream with 6.12 Kernel, 2025.01 U-Boot and Yocto Scarthgap/5.0

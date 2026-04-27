@@ -129,11 +129,11 @@ The support status is indicated by the following codes:
    ,,PWM,Yes
    ,Enhanced Pulse Width Modulation (EPWM) Module,,Yes
    ,Enhanced Quadrature Encoder Pulse (EQEP) Module,,No
-   Camera Subsystem,Camera Streaming Interface Receiver (CSI_RX_IF),,Yes
-   ,MIPI D-PHY Receiver (DPHY_RX),,Yes
-   ,Multiple Camera,,Yes
-   ,OV2312 RGB + IR sensor,,Yes
-   ,iMX219 sensor,,Yes
+   Camera Subsystem,Camera Streaming Interface Receiver (CSI_RX_IF),,No
+   ,MIPI D-PHY Receiver (DPHY_RX),,No
+   ,Multiple Camera,,No
+   ,OV2312 RGB + IR sensor,,No
+   ,iMX219 sensor,,No
    Timer Modules,Global Timebase Cunter (GTC),,Yes
    ,Windowed Watchdog Timer (WWDT) - MAIN domain,,Yes
    ,Windowed Watchdog Timer (WWDT) - MCU domain,,NA
