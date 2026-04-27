@@ -65,6 +65,14 @@ What's new
   - TIFS Firmware / SYSFW `v11.02.10 <https://software-dl.ti.com/tisci/esd/11_02_10/release_notes/release_notes.html>`__ (Click on the link for more information)
   - DM Firmware MSDK.11.02.00.32
   - Yocto scarthgap 5.0
+  
+**Features no longer supported with Vision AI SDK:**
+
+  - No support for Audio Codec (TLV320AIC3106) Linux driver
+  - No support for V4L2 based CSI2RX
+  - No support for EdgeAI Gstreamer Apps & QT based EdgeAI Gallery App
+  - No support of V4L2 based Gstreamer pipelines for VPAC ISP & TIDL inferencing
+  - No support for Custom TI Gstreamer plugins
 
 .. _release-specific-build-information:
 
