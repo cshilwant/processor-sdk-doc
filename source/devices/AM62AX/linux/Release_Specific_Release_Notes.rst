@@ -149,7 +149,7 @@ Issues Resolved
    "`EXT_EP-12785 <https://sir.ext.ti.com/jira/browse/EXT_EP-12785>`_","Cyclictest performance degradation on AM62x/AM64x/AM62A"
    "`EXT_EP-13147 <https://sir.ext.ti.com/jira/browse/EXT_EP-13147>`_","padconfig: ST_EN bit not preserved"
    "`EXT_EP-13169 <https://sir.ext.ti.com/jira/browse/EXT_EP-13169>`_","IPC: remoteproc fails to suspend/resume if there are no ipc firmwares in filesystem"
-   "`EXT_EP-12226 <https://sir.ext.ti.com/jira/browse/EXT_EP-12226>`_","Linux SDK v10.0: U-Boot "go" command needs Linux Kernel-like cache/MMU cleanup so 3rd Party OS can startup correctly"
+   "`EXT_EP-12226 <https://sir.ext.ti.com/jira/browse/EXT_EP-12226>`_","Linux SDK v10.0: U-Boot go command needs Linux Kernel-like cache/MMU cleanup so 3rd Party OS can startup correctly"
    "`EXT_EP-12970 <https://sir.ext.ti.com/jira/browse/EXT_EP-12970>`_","AM6x - Sitara Socs MCASP and BCDMA issue"
    "`EXT_EP-13312 <https://sir.ext.ti.com/jira/browse/EXT_EP-13312>`_","Wave5 Encoder Race condition leading to Kernel oops"
    "`EXT_SITMPUSW-154 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-154>`_","MSC ROI function not creating the desired ROI"
