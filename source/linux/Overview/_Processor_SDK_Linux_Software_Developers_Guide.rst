@@ -16,11 +16,9 @@ suggestions at `E2E <https://e2e.ti.com/>`__.
       * - :ref:`Getting Started Guide <overview-getting-started>` <-- **Start Here**
         - :ref:`How To Guides <how-to-guides>`
       * - :ref:`Supported Platforms and Versions <release-specific-supported-platforms-and-versions>`
-        - :ref:`Building the SDK with Yocto <overview-building-the-sdk>`
+        - :ref:`Release Notes <Release-note-label>`
       * - :ref:`Directory Structure Overview <overview-directory-structure>`
         - :ref:`GPLv3 Disclaimer <overview-gplv3-disclaimer>`
-      * - :ref:`Release Notes <Release-note-label>`
-        - :ref:`Migration Guide <release-specific-migration-guide>`
       * - :ref:`Technical Support <overview-technical-support>`
         - `Training <https://training.ti.com/processor-sdk-training-series>`__
 
