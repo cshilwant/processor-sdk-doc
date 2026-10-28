@@ -34,21 +34,21 @@ found on the SDK download page or in the installed directory as indicated below.
 -  Linux Manifest: :file:`<PSDK_PATH>/manifest/software_manifest.htm`
 
 
-Release 11.02.11.03
+Release 11.03.00.03
 ===================
 
-Released on Apr 2026
+Released on Sept 2026
 
 What's new
 ----------
 
 **Processor SDK Linux AM62AX Release has following new features:**
 
-  - Second 2025 LTS Reference Release Including RT combined branch model
+  - Third 2025 LTS Reference Release Including RT combined branch model
   - In Vision AI SDK, CSIRX driver is now supported from FreeRTOS running on the DM-R5F core. As a result, CSIRX drivers are no longer supported in the Linux kernel.
-  - EdgeAI memory carveouts now supported via `k3-am62a7-sk-edgeai.dtso <https://git.ti.com/cgit/ti-linux-kernel/ti-linux-kernel/tree/arch/arm64/boot/dts/ti/k3-am62a7-sk-edgeai.dtso?h=11.01.11>`_ in ti-linux-kernel & applied by default in the AM62A board environment via the name_overlays variable in ti-u-boot as seen in :file:`board/ti/am62ax/am62ax.env`
+  - EdgeAI memory carveouts now supported via `k3-am62a7-sk-edgeai.dtso <https://git.ti.com/cgit/ti-linux-kernel/ti-linux-kernel/tree/arch/arm64/boot/dts/ti/k3-am62a7-sk-edgeai.dtso?h=11.02.18>`_ in ti-linux-kernel & applied by default in the AM62A board environment via the name_overlays variable in ti-u-boot as seen in :file:`board/ti/am62ax/am62ax.env`
   - Linux EthFW client is now enabled via the :file:`k3-am62a7-sk-ethfw.dtbo` overlay
-  - Important Bug Fixes on top of Processor SDK 11.01.07.05 Release
+  - Important Bug Fixes on top of Processor SDK 11.02.11.03 Release
 
 **Key Release References:**
 
@@ -63,16 +63,18 @@ What's new
   - ATF 2.13+
   - OPTEE 4.7.0+
   - TIFS Firmware / SYSFW `v11.02.10 <https://software-dl.ti.com/tisci/esd/11_02_10/release_notes/release_notes.html>`__ (Click on the link for more information)
-  - DM Firmware MSDK.11.02.00.32
+  - DM Firmware MSDK.11.03.00.11
   - Yocto scarthgap 5.0
   
 **Features no longer supported with Vision AI SDK:**
 
-  - No support for Audio Codec (TLV320AIC3106) Linux driver
+  - No support for Audio Codec (TLV320AIC3106) Linux driver - Limitation due to I2C Tree of SK-AM62A-LP
   - No support for V4L2 based CSI2RX
   - No support for EdgeAI Gstreamer Apps & QT based EdgeAI Gallery App
   - No support of V4L2 based Gstreamer pipelines for VPAC ISP & TIDL inferencing
   - No support for Custom TI Gstreamer plugins
+  - No support for EdgeAI TIOVX Apps
+  - No support for building ADAS Filesystem from sources via Yocto
 
 .. _release-specific-build-information:
 
@@ -82,9 +84,9 @@ Build Information
 U-Boot
 ------
 
-| Head Commit: f9285b5ec2ded0bd426a05599057715e52f6c520
+| Head Commit: 78bb8cc8a12687f810e5be4ac633ef3fd88bb00f
 | uBoot Version: 2025.01
-| uBoot Tag: 11.02.11.03
+| uBoot Tag: 11.03.00.03
 |
 
 TF-A
@@ -105,14 +107,14 @@ OP-TEE
 
 ti-linux-firmware
 -----------------
-| Head Commit: 51277d702acb8681ec38cc9a9979616d2f2c0ce9
+| Head Commit: 2778630264cb9315d47c8585b313f04b1216a827
 
 Kernel
 ------
 .. rubric:: Linux Kernel
    :name: linux-kernel
 
-| Head Commit: de0910685fe405c575e83cf05351441498b13a34
+| Head Commit: 534e0b65190ebb94a16adccacccfb52a2a2f8d9a
 | Kernel Version: v6.12.57
 | use-kernel-config=defconfig
 | non-rt-config-fragment=kernel/configs/ti_arm64_prune.config
@@ -125,9 +127,9 @@ Issues Tracker
 
 .. note::
 
-    - Release Specific Issues including details will be published through Software Incident Report (SIR) portal
+   - Release Specific Issues including details will be published through Software Incident Report (SIR) portal
 
-    - Further Information can be found at `SIR Portal <https://sir.ext.ti.com/>`_
+   - Further Information can be found at `SIR Portal <https://sir.ext.ti.com/>`_
 
 Errata Resolved
 ---------------
@@ -155,6 +157,8 @@ Issues Resolved
    "`EXT_SITMPUSW-154 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-154>`_","MSC ROI function not creating the desired ROI"
    "`EXT_EP-12747 <https://sir.ext.ti.com/jira/browse/EXT_EP-12747>`_","Codec: Wave5: Improve Decoder Performance and Fix SError Crash on Fluster test"
    "`EXT_EP-12787 <https://sir.ext.ti.com/jira/browse/EXT_EP-12787>`_","Multi channel decoding of h264 with high CPU load freezes on AM62A"
+   "`EXT_EP-12043 <https://sir.ext.ti.com/jira/browse/EXT_EP-12043>`_","TPS6594: Error IRQ trap reach ilim, overcurrent for BUCK1/2 error"
+   "`EXT_SITMPUSW-151 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-151>`_","VPAC switching between WDR mode and linear mode causing wrong image color"
 
 Issues Open
 -----------
@@ -162,8 +166,5 @@ Issues Open
    :header: "Record ID", "Title"
    :widths: 15, 70
 
-   "`EXT_SITMPUSW-76 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-76>`_","Heterogeneous-camera streaming has high latency while streaming imx390+ov2312"
+   "`EXT_SITMPUSW-76 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-76>`_","CSI-RX on A53: Heterogeneous-camera streaming has high latency while streaming imx390+ov2312"
    "`EXT_EP-12777 <https://sir.ext.ti.com/jira/browse/EXT_EP-12777>`_","OSPI XIP prefetch causes DMA transfer data corruption"
-   "`EXT_SITMPUSW-151 <https://sir.ext.ti.com/jira/browse/EXT_SITMPUSW-154>`_","VPAC switching between WDR mode and linear mode causing wrong image color"
-   "`EXT_EP-12043 <https://sir.ext.ti.com/jira/browse/EXT_EP-12043>`_","TPS6594: Error IRQ trap reach ilim, overcurrent for BUCK1/2 error"
-
